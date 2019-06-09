@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crowd Counting</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="echarts.min.js"></script>
+</head>
+<body>
+    <div class ="header">
+        <img class="logo" src="img/63427078-021e-4964-9279-47a905a84c33.png">
+        <select>
+            <option time="10">10am-12am</option>>
+            <option time="12">12am-2pm</option>>
+            <option time="14">2pm-4pm</option>>
+            <option time="16">4pm-6pm</option>>
+            <option time="18">6pm-8pm</option>>
+
+        </select>
+        <a class="btn">Search</a>
+    </div>
+    <div id="main" style="width:600px; height:400px; margin: 100px 100px;"></div>
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    $(document).ready(function(){
+        var dic = new Object();
+        var firebaseConfig = {
+            apiKey: "AIzaSyBXJdXtjpAB2PeuKo_kvo16Qgl-M5VGntU",
+            authDomain: "crowdcounting-2b472.firebaseapp.com",
+            databaseURL: "https://crowdcounting-2b472.firebaseio.com",
+            projectId: "crowdcounting-2b472",
+            storageBucket: "crowdcounting-2b472.appspot.com",
+            messagingSenderId: "1073106225732",
+            appId: "1:1073106225732:web:5e94e5a80acfdf8e"
+        };
+        // Initialize Firebase
+        var res={};
+        firebase.initializeApp(firebaseConfig);
+        var myChart = echarts.init(document.getElementById('main'));
+        retrieve(10,12);
+
+        $(".btn").on('click',function () {
+            var time = $('select').children("option:selected").attr("time");
+            retrieve(parseInt(time),parseInt(time)+2);
+        });
+
+
+        function retrieve(start,end){
+            console.log("start " + start)
+
+            var resData = firebase.database().ref().child("records");
+            resData.on('value',function(snapshot){
+                console.log(snapshot.val());
+                res = snapshot.val();
+                extractData(res,start,end);
+                var label = [];
+                var count = [];
+                for(var key in dic){
+                    label.push(key);
+                    count.push(dic[key]);
+                }
+                var brief = [];
+                for(i = 0;i<label.length;i++){
+                    var arry = label[i].split(",")
+                    brief.push(arry[0]);
+                }
+                if(brief.length == 0){
+                    alert("Sorry, there isn't corresponding data during this period.")
+                }
+                var option = {
+                    title: {
+                        text: 'Average Counting Beteewn '+ start+":00 to"+ end+":00"
+                    },
+                    tooltip: {},
+                    legend: {
+                        data:['Count'],
+                        right:'20%'
+                    },
+                    xAxis: {
+                        data: brief,
+                        axisLabel:{
+                            rotate:20
+                        },
+                        ticks: {
+                            autoSkip: false
+                        }
+                    },
+
+                    yAxis: {},
+                    series: [{
+                        name: 'Counts',
+                        type: 'bar',
+                        data: count,
+                        color: 'darkturquoise'
+                    }]
+                };
+
+                // use configuration item and data specified to show chart
+                myChart.setOption(option);
+                dic = {};
+            });
+        }
+        function extractData(data,start,end){
+            for(ele in data){
+                console.log(ele)
+                var date = new Date(parseInt(ele));
+                var hr = date.getHours();
+                if(hr>=start && hr<=end){
+                    var address = data[ele].Address;
+                    if(!(address in dic)){
+                        dic[address] = parseInt(data[ele].Num);
+                    }else{
+                        dic[address] = dic[address] + parseInt(data[ele].Num);
+                    }
+                }
+
+            }
+            console.log(dic)
+
+        }
+    });
+    // Your web app's Firebase configuration
+
+    // extractData();
+
+
+</script>
+</html>

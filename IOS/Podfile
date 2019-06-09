@@ -1,0 +1,24 @@
+platform :ios,'11.0'
+use_frameworks!
+
+target 'CrowdCounting' do
+    pod 'SwiftMessages', '5.0.0'
+    pod 'FCAlertView'
+    pod 'Alamofire', '~> 4.7'
+    pod 'AlamofireObjectMapper', '~> 5.0'
+    pod 'AlamofireImage'
+    pod 'PopupDialog', '~> 0.9'
+    pod 'YPImagePicker'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+end
+
+
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+        config.build_settings.delete('CODE_SIGNING_ALLOWED')
+        config.build_settings.delete('CODE_SIGNING_REQUIRED')
+    end
+end
+

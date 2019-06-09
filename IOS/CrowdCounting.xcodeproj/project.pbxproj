@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0951658C227570E600065AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951658B227570E600065AA8 /* AppDelegate.swift */; };
+		0951658E227570E600065AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951658D227570E600065AA8 /* ViewController.swift */; };
+		09516591227570E600065AA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0951658F227570E600065AA8 /* Main.storyboard */; };
+		09516594227570E600065AA8 /* CrowdCounting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09516592227570E600065AA8 /* CrowdCounting.xcdatamodeld */; };
+		09516596227570E600065AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09516595227570E600065AA8 /* Assets.xcassets */; };
+		09516599227570E600065AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09516597227570E600065AA8 /* LaunchScreen.storyboard */; };
+		095165A4227570E600065AA8 /* CrowdCountingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165A3227570E600065AA8 /* CrowdCountingTests.swift */; };
+		095165AF227570E600065AA8 /* CrowdCountingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165AE227570E600065AA8 /* CrowdCountingUITests.swift */; };
+		095165BE2276B86C00065AA8 /* UIfuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165BD2276B86C00065AA8 /* UIfuncs.swift */; };
+		095165C42276C29600065AA8 /* newExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165C32276C29600065AA8 /* newExtension.swift */; };
+		095165C62276C2E300065AA8 /* WebAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165C52276C2E300065AA8 /* WebAPIHandler.swift */; };
+		095165CA2276CD9700065AA8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165C92276CD9700065AA8 /* UploadViewController.swift */; };
+		095165D2227C1C8100065AA8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095165D1227C1C8100065AA8 /* ResultViewController.swift */; };
+		0967DBD2228A7D5000C776B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0967DBD1228A7D5000C776B7 /* GoogleService-Info.plist */; };
+		C2C5C49C787BB2489546C242 /* Pods_CrowdCounting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5E23CC19BDE9938C608EBF5 /* Pods_CrowdCounting.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		095165A0227570E600065AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09516580227570E600065AA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09516587227570E600065AA8;
+			remoteInfo = CrowdCounting;
+		};
+		095165AB227570E600065AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09516580227570E600065AA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09516587227570E600065AA8;
+			remoteInfo = CrowdCounting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09516588227570E600065AA8 /* CrowdCounting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdCounting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0951658B227570E600065AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0951658D227570E600065AA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09516590227570E600065AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09516593227570E600065AA8 /* CrowdCounting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CrowdCounting.xcdatamodel; sourceTree = "<group>"; };
+		09516595227570E600065AA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09516598227570E600065AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0951659A227570E600065AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0951659F227570E600065AA8 /* CrowdCountingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdCountingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		095165A3227570E600065AA8 /* CrowdCountingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdCountingTests.swift; sourceTree = "<group>"; };
+		095165A5227570E600065AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095165AA227570E600065AA8 /* CrowdCountingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdCountingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		095165AE227570E600065AA8 /* CrowdCountingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdCountingUITests.swift; sourceTree = "<group>"; };
+		095165B0227570E600065AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		095165BD2276B86C00065AA8 /* UIfuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIfuncs.swift; sourceTree = "<group>"; };
+		095165C32276C29600065AA8 /* newExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newExtension.swift; sourceTree = "<group>"; };
+		095165C52276C2E300065AA8 /* WebAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIHandler.swift; sourceTree = "<group>"; };
+		095165C92276CD9700065AA8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		095165D1227C1C8100065AA8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		0967DBD1228A7D5000C776B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C29FF43F07087BDC029478B1 /* Pods-CrowdCounting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdCounting.release.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdCounting/Pods-CrowdCounting.release.xcconfig"; sourceTree = "<group>"; };
+		C59C85A75E3C62A3B83BC0EE /* Pods-CrowdCounting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrowdCounting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CrowdCounting/Pods-CrowdCounting.debug.xcconfig"; sourceTree = "<group>"; };
+		E5E23CC19BDE9938C608EBF5 /* Pods_CrowdCounting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrowdCounting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09516585227570E600065AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2C5C49C787BB2489546C242 /* Pods_CrowdCounting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951659C227570E600065AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095165A7227570E600065AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0951657F227570E600065AA8 = {
+			isa = PBXGroup;
+			children = (
+				095165BC2276B85400065AA8 /* CommonFunc */,
+				0951658A227570E600065AA8 /* CrowdCounting */,
+				095165A2227570E600065AA8 /* CrowdCountingTests */,
+				095165AD227570E600065AA8 /* CrowdCountingUITests */,
+				09516589227570E600065AA8 /* Products */,
+				A72EA6C2E0E5DA002C7D565F /* Pods */,
+				9D6259A2B3924C2B7A6DD34F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		09516589227570E600065AA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09516588227570E600065AA8 /* CrowdCounting.app */,
+				0951659F227570E600065AA8 /* CrowdCountingTests.xctest */,
+				095165AA227570E600065AA8 /* CrowdCountingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0951658A227570E600065AA8 /* CrowdCounting */ = {
+			isa = PBXGroup;
+			children = (
+				0967DBD1228A7D5000C776B7 /* GoogleService-Info.plist */,
+				0951658B227570E600065AA8 /* AppDelegate.swift */,
+				0951658D227570E600065AA8 /* ViewController.swift */,
+				0951658F227570E600065AA8 /* Main.storyboard */,
+				09516595227570E600065AA8 /* Assets.xcassets */,
+				09516597227570E600065AA8 /* LaunchScreen.storyboard */,
+				0951659A227570E600065AA8 /* Info.plist */,
+				09516592227570E600065AA8 /* CrowdCounting.xcdatamodeld */,
+				095165C92276CD9700065AA8 /* UploadViewController.swift */,
+				095165D1227C1C8100065AA8 /* ResultViewController.swift */,
+			);
+			path = CrowdCounting;
+			sourceTree = "<group>";
+		};
+		095165A2227570E600065AA8 /* CrowdCountingTests */ = {
+			isa = PBXGroup;
+			children = (
+				095165A3227570E600065AA8 /* CrowdCountingTests.swift */,
+				095165A5227570E600065AA8 /* Info.plist */,
+			);
+			path = CrowdCountingTests;
+			sourceTree = "<group>";
+		};
+		095165AD227570E600065AA8 /* CrowdCountingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				095165AE227570E600065AA8 /* CrowdCountingUITests.swift */,
+				095165B0227570E600065AA8 /* Info.plist */,
+			);
+			path = CrowdCountingUITests;
+			sourceTree = "<group>";
+		};
+		095165BC2276B85400065AA8 /* CommonFunc */ = {
+			isa = PBXGroup;
+			children = (
+				095165BD2276B86C00065AA8 /* UIfuncs.swift */,
+				095165C32276C29600065AA8 /* newExtension.swift */,
+				095165C52276C2E300065AA8 /* WebAPIHandler.swift */,
+			);
+			path = CommonFunc;
+			sourceTree = "<group>";
+		};
+		9D6259A2B3924C2B7A6DD34F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5E23CC19BDE9938C608EBF5 /* Pods_CrowdCounting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A72EA6C2E0E5DA002C7D565F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C59C85A75E3C62A3B83BC0EE /* Pods-CrowdCounting.debug.xcconfig */,
+				C29FF43F07087BDC029478B1 /* Pods-CrowdCounting.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09516587227570E600065AA8 /* CrowdCounting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095165B3227570E600065AA8 /* Build configuration list for PBXNativeTarget "CrowdCounting" */;
+			buildPhases = (
+				837D274F4F6D53FD85D49F18 /* [CP] Check Pods Manifest.lock */,
+				09516584227570E600065AA8 /* Sources */,
+				09516585227570E600065AA8 /* Frameworks */,
+				09516586227570E600065AA8 /* Resources */,
+				6950BAEC6B61F5DD80AA7FD7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrowdCounting;
+			productName = CrowdCounting;
+			productReference = 09516588227570E600065AA8 /* CrowdCounting.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0951659E227570E600065AA8 /* CrowdCountingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095165B6227570E600065AA8 /* Build configuration list for PBXNativeTarget "CrowdCountingTests" */;
+			buildPhases = (
+				0951659B227570E600065AA8 /* Sources */,
+				0951659C227570E600065AA8 /* Frameworks */,
+				0951659D227570E600065AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095165A1227570E600065AA8 /* PBXTargetDependency */,
+			);
+			name = CrowdCountingTests;
+			productName = CrowdCountingTests;
+			productReference = 0951659F227570E600065AA8 /* CrowdCountingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		095165A9227570E600065AA8 /* CrowdCountingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 095165B9227570E600065AA8 /* Build configuration list for PBXNativeTarget "CrowdCountingUITests" */;
+			buildPhases = (
+				095165A6227570E600065AA8 /* Sources */,
+				095165A7227570E600065AA8 /* Frameworks */,
+				095165A8227570E600065AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				095165AC227570E600065AA8 /* PBXTargetDependency */,
+			);
+			name = CrowdCountingUITests;
+			productName = CrowdCountingUITests;
+			productReference = 095165AA227570E600065AA8 /* CrowdCountingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09516580227570E600065AA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Raelyn Lyu";
+				TargetAttributes = {
+					09516587227570E600065AA8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0951659E227570E600065AA8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 09516587227570E600065AA8;
+					};
+					095165A9227570E600065AA8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 09516587227570E600065AA8;
+					};
+				};
+			};
+			buildConfigurationList = 09516583227570E600065AA8 /* Build configuration list for PBXProject "CrowdCounting" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0951657F227570E600065AA8;
+			productRefGroup = 09516589227570E600065AA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09516587227570E600065AA8 /* CrowdCounting */,
+				0951659E227570E600065AA8 /* CrowdCountingTests */,
+				095165A9227570E600065AA8 /* CrowdCountingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09516586227570E600065AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09516599227570E600065AA8 /* LaunchScreen.storyboard in Resources */,
+				0967DBD2228A7D5000C776B7 /* GoogleService-Info.plist in Resources */,
+				09516596227570E600065AA8 /* Assets.xcassets in Resources */,
+				09516591227570E600065AA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951659D227570E600065AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095165A8227570E600065AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6950BAEC6B61F5DD80AA7FD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CrowdCounting/Pods-CrowdCounting-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/FCAlertView/FCAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/PryntTrimmerView/PryntTrimmerView.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/YPImagePicker/YPImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PryntTrimmerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CrowdCounting/Pods-CrowdCounting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837D274F4F6D53FD85D49F18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrowdCounting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09516584227570E600065AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095165C62276C2E300065AA8 /* WebAPIHandler.swift in Sources */,
+				095165CA2276CD9700065AA8 /* UploadViewController.swift in Sources */,
+				09516594227570E600065AA8 /* CrowdCounting.xcdatamodeld in Sources */,
+				095165D2227C1C8100065AA8 /* ResultViewController.swift in Sources */,
+				095165BE2276B86C00065AA8 /* UIfuncs.swift in Sources */,
+				0951658E227570E600065AA8 /* ViewController.swift in Sources */,
+				095165C42276C29600065AA8 /* newExtension.swift in Sources */,
+				0951658C227570E600065AA8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0951659B227570E600065AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095165A4227570E600065AA8 /* CrowdCountingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		095165A6227570E600065AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				095165AF227570E600065AA8 /* CrowdCountingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		095165A1227570E600065AA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09516587227570E600065AA8 /* CrowdCounting */;
+			targetProxy = 095165A0227570E600065AA8 /* PBXContainerItemProxy */;
+		};
+		095165AC227570E600065AA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09516587227570E600065AA8 /* CrowdCounting */;
+			targetProxy = 095165AB227570E600065AA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0951658F227570E600065AA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09516590227570E600065AA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09516597227570E600065AA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09516598227570E600065AA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		095165B1227570E600065AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		095165B2227570E600065AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		095165B4227570E600065AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C59C85A75E3C62A3B83BC0EE /* Pods-CrowdCounting.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH3SM3534;
+				INFOPLIST_FILE = CrowdCounting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-120.UoM.Lyu.CrowdCounting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		095165B5227570E600065AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29FF43F07087BDC029478B1 /* Pods-CrowdCounting.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH3SM3534;
+				INFOPLIST_FILE = CrowdCounting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-120.UoM.Lyu.CrowdCounting";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		095165B7227570E600065AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH3SM3534;
+				INFOPLIST_FILE = CrowdCountingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-02874701.CrowdCountingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowdCounting.app/CrowdCounting";
+			};
+			name = Debug;
+		};
+		095165B8227570E600065AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH3SM3534;
+				INFOPLIST_FILE = CrowdCountingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-02874701.CrowdCountingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrowdCounting.app/CrowdCounting";
+			};
+			name = Release;
+		};
+		095165BA227570E600065AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH3SM3534;
+				INFOPLIST_FILE = CrowdCountingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-02874701.CrowdCountingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrowdCounting;
+			};
+			name = Debug;
+		};
+		095165BB227570E600065AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2KH3SM3534;
+				INFOPLIST_FILE = CrowdCountingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-02874701.CrowdCountingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrowdCounting;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09516583227570E600065AA8 /* Build configuration list for PBXProject "CrowdCounting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095165B1227570E600065AA8 /* Debug */,
+				095165B2227570E600065AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095165B3227570E600065AA8 /* Build configuration list for PBXNativeTarget "CrowdCounting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095165B4227570E600065AA8 /* Debug */,
+				095165B5227570E600065AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095165B6227570E600065AA8 /* Build configuration list for PBXNativeTarget "CrowdCountingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095165B7227570E600065AA8 /* Debug */,
+				095165B8227570E600065AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		095165B9227570E600065AA8 /* Build configuration list for PBXNativeTarget "CrowdCountingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				095165BA227570E600065AA8 /* Debug */,
+				095165BB227570E600065AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09516592227570E600065AA8 /* CrowdCounting.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09516593227570E600065AA8 /* CrowdCounting.xcdatamodel */,
+			);
+			currentVersion = 09516593227570E600065AA8 /* CrowdCounting.xcdatamodel */;
+			path = CrowdCounting.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09516580227570E600065AA8 /* Project object */;
+}
